@@ -41,7 +41,6 @@ import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Stage;
 
-//TODO: Implement editing
 //TODO: Implement adding the items back into the bill
 //TODO: Add a TableListView to show all current items in bill, possibly be able to edit with that
 //TODO: Implement adding or removing inventory 

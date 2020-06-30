@@ -28,7 +28,6 @@ public class AdvancedController
 	@FXML Label alert;
 	
 	
-	
 	@FXML private void homePress(ActionEvent e)
 	{
 		try 

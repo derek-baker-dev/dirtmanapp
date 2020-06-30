@@ -24,6 +24,7 @@ import javafx.stage.Stage;
 //TODO: Make the program installable
 //TODO: Verify everything works
 //TODO: Add the tableViews to billing
+//TODO: Look at the to-dos in editbill and new bill
 
 public class DirtManMain extends Application 
 {
