@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" style="-fx-border-radius: 25px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dirtman.application.DirtManController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" stylesheets="@mainpage.css" VBox.vgrow="ALWAYS">
+      <children>
+            <Button id="price" layoutX="152.0" layoutY="166.0" mnemonicParsing="false" onAction="#pricePress" prefHeight="39.0" prefWidth="113.0" text="Change Stuff" />
+            <Button id="billing" layoutX="402.0" layoutY="168.0" mnemonicParsing="false" onAction="#billingPress" prefHeight="39.0" prefWidth="81.0" text="Billing">
+               <font>
+                  <Font name="Centaur" size="18.0" />
+               </font></Button>
+            <Button id="advanced" layoutX="510.0" layoutY="336.0" mnemonicParsing="false" onAction="#advancedPress" prefHeight="34.0" prefWidth="98.0" text="Advanced" />
+            <Text layoutX="156.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a Mode">
+               <font>
+                  <Font name="Coolsville Regular" size="40.0" />
+               </font>
+            </Text>
+            <Button id="inventory" layoutX="286.0" layoutY="222.0" mnemonicParsing="false" onAction="#inventoryPress" prefHeight="39.0" prefWidth="98.0" text="Inventory" />
+            <Button id="add" layoutX="267.0" layoutY="106.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#addItemPress" prefHeight="39.0" prefWidth="136.0" text="Add / Remove" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

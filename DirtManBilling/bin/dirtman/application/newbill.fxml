@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dirtman.application.NewBillController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" onMouseEntered="#createFile" prefHeight="-1.0" prefWidth="-1.0" stylesheets="@buttons.css" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="236.0" layoutY="12.0" styleClass="title" text="Add Bill">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#homePress" text="Home" />
+            <Button layoutX="574.0" layoutY="14.0" mnemonicParsing="false" onAction="#backPress" text="Back" />
+            <Button layoutX="431.0" layoutY="73.0" mnemonicParsing="false" onAction="#addToBill" text="Add Item" />
+            <ComboBox fx:id="items" editable="true" layoutX="119.0" layoutY="73.0" onShown="#comboBoxPopulate" prefWidth="150.0" promptText="Item to Add" />
+            <TextField fx:id="quantIn" layoutX="323.0" layoutY="73.0" prefHeight="25.0" prefWidth="61.0" promptText="Quanity" />
+            <Button layoutX="287.0" layoutY="339.0" mnemonicParsing="false" onAction="#finishPress" text="Finish Bill" />
+            <TextField fx:id="cName" layoutX="115.0" layoutY="165.0" prefHeight="25.0" prefWidth="403.0" promptText="Customer Name:" />
+            <TextField fx:id="cAddress" layoutX="119.0" layoutY="215.0" prefHeight="25.0" prefWidth="403.0" promptText="Customer Address:" />
+            <TextField fx:id="cCityState" layoutX="119.0" layoutY="273.0" prefHeight="25.0" prefWidth="403.0" promptText="Customer City, State:" />
+            <Label layoutX="132.0" layoutY="109.0" text="Enter how you want displayed on bill">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Line endX="340.5" layoutX="295.0" layoutY="109.0" startX="-298.0" />
+         </children></AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,42 @@
+Button {
+	-fx-color: #fecd08;
+	-fx-font-family : "Commons";
+}
+Button:hover {
+	-fx-color: black;
+}
+
+RadioButton {
+	-fx-font-family: "Commons";
+}
+
+RadioButton:selected {
+	-fx-color: red;
+}
+
+CheckBox {
+	-fx-font-family: "Commons";
+}
+
+CheckBox:selected {
+	-fx-color: red;
+}
+
+Label {
+	-fx-font-family: "Constantia";
+	-fx-color: black;
+}
+
+.title {
+	-fx-font-family: "Coolsville";
+	-fx-font-size: 35px;
+}
+
+.title1 {
+	-fx-font-family: "Coolsville";
+	-fx-font-size: 25px;
+}
+
+TextField {
+	-fx-font-family: "Constantia";
+}

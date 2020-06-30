@@ -1,0 +1,49 @@
+Button {
+	-fx-font-family: "Centaur";
+	-fx-font-size: 18px;
+}
+
+
+#add {
+	-fx-color: green;
+}
+
+#add:hover {
+	-fx-color: red;
+}
+
+#price {
+	-fx-color: blue;
+}
+
+#price:hover {
+	-fx-color: orange;
+}
+
+#billing {
+	-fx-color: teal;
+}
+
+#billing:hover {
+	-fx-color: white;
+}
+
+#inventory {
+	-fx-color: yellow;
+}
+
+#inventory:hover {
+	-fx-color: lime;
+}
+
+#advanced {
+	-fx-color: red;
+}
+
+AnchorPane {
+	-fx-background-color: grey;
+}
+
+:hover {
+	-fx-color: orange;
+}

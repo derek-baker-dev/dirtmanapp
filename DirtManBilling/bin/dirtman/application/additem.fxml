@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dirtman.application.AddItemController">
+  <children>
+    <AnchorPane fx:id="ap" maxHeight="-1.0" maxWidth="-1.0" onMouseMoved="#getReady" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: grey;" stylesheets="@buttons.css" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="invalid" layoutX="20.0" layoutY="59.0" textFill="#e80a0a">
+               <font>
+                  <Font size="77.0" />
+               </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="27.0" text="Add Item">
+               <font>
+                  <Font name="Coolsville Regular" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="231.0" text="Remove Item">
+               <font>
+                  <Font name="Coolsville Regular" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#homePress" text="Home">
+               <font>
+                  <Font name="Commons Regular" size="12.0" />
+               </font></Button>
+            <TextField fx:id="name" layoutX="14.0" layoutY="111.0" onMouseClicked="#clearRedText" prefHeight="22.0" prefWidth="150.0" promptText="Item Name">
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="price" layoutX="181.0" layoutY="111.0" onKeyReleased="#enterPush" onMouseClicked="#clearRedText" prefHeight="22.0" prefWidth="150.0" promptText="Price">
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="num" layoutX="343.0" layoutY="111.0" onKeyReleased="#enterPush" onMouseClicked="#clearRedText" prefHeight="22.0" prefWidth="150.0" promptText="Number on Hand">
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></TextField>
+            <ComboBox fx:id="items" editable="true" layoutX="238.0" layoutY="288.0" onShown="#comboBoxPopulate" prefWidth="150.0" promptText="Item to Remove" />
+            <Button layoutX="284.0" layoutY="336.0" mnemonicParsing="false" onAction="#deleteAnItem" text="Remove">
+               <font>
+                  <Font name="Commons Regular" size="12.0" />
+               </font></Button>
+            <Button layoutX="294.0" layoutY="188.0" mnemonicParsing="false" onAction="#addNewItem" text="Add">
+               <font>
+                  <Font name="Commons Regular" size="12.0" />
+               </font></Button>
+            <RadioButton fx:id="length" layoutX="517.0" layoutY="68.0" mnemonicParsing="false" onAction="#clearRedText" text="length">
+               <toggleGroup>
+                  <ToggleGroup fx:id="t" />
+               </toggleGroup>
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="piece" layoutX="517.0" layoutY="115.0" mnemonicParsing="false" onAction="#clearRedText" text="piece" toggleGroup="$t">
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="hour" layoutX="517.0" layoutY="159.0" mnemonicParsing="false" onAction="#clearRedText" text="hour" toggleGroup="$t">
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="electrical" layoutX="20.0" layoutY="159.0" mnemonicParsing="false" onAction="#setVisiblity" text="Electrical">
+               <toggleGroup>
+                  <ToggleGroup fx:id="a" />
+               </toggleGroup>
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="plumbing" layoutX="129.0" layoutY="159.0" mnemonicParsing="false" onAction="#setVisiblity" text="Plumbing" toggleGroup="$a">
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="labor" layoutX="20.0" layoutY="192.0" mnemonicParsing="false" onAction="#setVisiblity" prefHeight="17.0" prefWidth="68.0" text="Labor" toggleGroup="$a">
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="equipment" layoutX="126.0" layoutY="192.0" mnemonicParsing="false" onAction="#setVisiblity" text="Equipment" toggleGroup="$a">
+               <font>
+                  <Font name="Constantia" size="12.0" />
+               </font></RadioButton>
+            <Line endX="539.0" layoutX="101.0" layoutY="230.0" startX="-100.0" />
+         </children></AnchorPane>
+  </children>
+</VBox>
