@@ -18,6 +18,12 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+//TODO: Make sure buttons are consistent
+//TODO: Figure out the resizing stuff in billing
+//TODO: Figure out why the edit bill creates a corrupted file
+//TODO: Make the program installable
+//TODO: Verify everything works
+//TODO: Add the tableViews to billing
 
 public class DirtManMain extends Application 
 {
