@@ -12,6 +12,11 @@ import java.util.Scanner;
 import dirtman.application.DirtManMain;
 @SuppressWarnings("unused")
 
+/**
+ * This class provides methods for using customer objects. Not in use at the moment
+ * @author dheimes
+ *
+ */
 public class CustomerStuff 
 {
 	private File inFile;

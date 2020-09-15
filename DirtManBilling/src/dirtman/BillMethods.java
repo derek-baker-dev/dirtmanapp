@@ -10,6 +10,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+//TODO:FIX THIS
 public class BillMethods 
 {
 	ArrayList<Item> items;
@@ -23,12 +24,13 @@ public class BillMethods
 		 items = new ArrayList<Item>();
 	}
 	
+	//Don't think this is working
 	public Item getBillItem(File inFile, int pos)
 	{
 		Item item = null;
 		try
 		{
-			FileInputStream in = new FileInputStream(new File("again.xlsx"));
+			FileInputStream in = new FileInputStream(inFile);
 			@SuppressWarnings("resource")
 			XSSFWorkbook workbook = new XSSFWorkbook(in);
 			XSSFSheet sheet = workbook.getSheetAt(0);

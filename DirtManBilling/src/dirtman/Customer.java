@@ -1,5 +1,11 @@
 package dirtman;
 
+
+/**
+ * This is not in use at the moment. This class creates character objects for storing character information.
+ * @author dheimes
+ *
+ */
 public class Customer 
 {
 	private String name;
