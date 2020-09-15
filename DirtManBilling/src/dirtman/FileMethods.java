@@ -14,17 +14,46 @@ import java.util.Scanner;
 
 import dirtman.application.DirtManMain;
 
+/**
+ * This is the method that provides methods for file manipulation.
+ * @author dheimes
+ *
+ */
 public class FileMethods 
 {
+	/**
+	 * The File that is being manipulated
+	 */
 	private File inFile;
+	/**
+	 * The PrintWriter object used throughout the class
+	 */
 	private PrintWriter printer;
+	/**
+	 * The FileOutputStream object used throughout the class
+	 */
 	private FileOutputStream out;
+	/**
+	 * The ObjectOutputStream object used throughout the class
+	 */
 	private ObjectOutputStream objOut;
+	/**
+	 * The ArrayList that stores the items; serialized version
+	 * It is just set to the one declared in DirtManMain
+	 */
 	private ArrayList<Item> items = DirtManMain.items;
+	/**
+	 * The ArrayList that stores the items; csv version
+	 */
 	private ArrayList<Item> csvItems;
+	/**
+	 * Boolean variable to determine if the program is in serial or csv mode
+	 */
 	boolean flip = DirtManMain.flip;
 	
-	
+	/**
+	 * Default constructor that uses
+	 */
 	public FileMethods()
 	{
 		if (flip == false)

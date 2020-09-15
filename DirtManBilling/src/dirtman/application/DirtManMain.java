@@ -26,6 +26,11 @@ import javafx.stage.Stage;
 //TODO: Add the tableViews to billing
 //TODO: Look at the to-dos in editbill and new bill
 
+/**
+ * This class sets up the whole thing.
+ * @author dheimes
+ *
+ */
 public class DirtManMain extends Application 
 {
 	private static final int APP_WIDTH = 640;
@@ -58,6 +63,9 @@ public class DirtManMain extends Application
 	public static Double markup = 1.3;
 	public static Double expensiveMarkup = 1.1;
 	
+	/**
+	 * This is a filter so that a text box only accepts integers
+	 */
 	public static UnaryOperator<Change> integerFilter = change -> 
 	{
         String newText = change.getControlNewText();
@@ -67,7 +75,9 @@ public class DirtManMain extends Application
         }
         return null;
     };
-    
+    /**
+     * This is a filter so that a text box only accepts doubles (or ints)
+     */
     public static UnaryOperator<Change> doubleFilter = change -> 
 	{
         String newText = change.getControlNewText();
@@ -78,11 +88,13 @@ public class DirtManMain extends Application
         return null;
     };
     
+    //This might not be needed
     @FXML public void exitApplication(ActionEvent e)
     {
     	Platform.exit();
     }
     
+    //This writes the list of items to the file
     @Override
     public void stop()
     {
@@ -90,7 +102,9 @@ public class DirtManMain extends Application
     	filemeth.writeToFile();
     }
 	
-	
+	/**
+	 * This sets up the first stage
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void start(Stage primaryStage) throws Exception 
@@ -128,7 +142,11 @@ public class DirtManMain extends Application
 			e.printStackTrace();
 		}
 	}
-
+	
+	/**
+	 * kicks off the gui
+	 * @param args the arguments
+	 */
 	public static void main(String[] args)
 	{
 		launch(args);

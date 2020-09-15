@@ -6,21 +6,22 @@ import javafx.event.EventHandler;
 import javafx.scene.control.ComboBox;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-
+/**
+ * A listener class used by the CombobBoxes in the GUI
+ * @author dheimes
+ *
+ */
 public class AutoCompleteComboBoxListener implements EventHandler<KeyEvent>
 {
 	private ComboBox<String> comboBox;
-   // private StringBuilder sb;
     private ObservableList<String> data;
     private boolean moveCaretToPos = false;
     private int caretPos;
 
     public AutoCompleteComboBoxListener(final ComboBox<String> comboBox) {
         this.comboBox = comboBox;
-       // sb = new StringBuilder();
         data = comboBox.getItems();
 
-        //this.comboBox.setEditable(true);
         this.comboBox.setOnKeyPressed(new EventHandler<KeyEvent>() {
 
             @Override
