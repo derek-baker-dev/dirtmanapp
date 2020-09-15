@@ -52,7 +52,7 @@ public class FileMethods
 	boolean flip = DirtManMain.flip;
 	
 	/**
-	 * Default constructor that uses
+	 * Default constructor that uses files defined in DirtManMain
 	 */
 	public FileMethods()
 	{
